@@ -1,0 +1,12 @@
+id,rule,statement
+BR-01,Return window,Stock items can be returned within 30 calendar days of the invoice date. Warranty claims follow the supplier's warranty period instead.
+BR-02,Restocking fee,"15% of the line value when the reason is ""ordered the wrong part"" or ""no longer needed"". No fee when Tessmar, the carrier or the product is at fault."
+BR-03,Items that cannot be returned,"Special-order items, anything cut to length (hose, belting, chain), opened lubricants and adhesives, and aerosols. A request for one of these needs an exception approval."
+BR-04,Automatic approval,"A line is approved without review when it is returnable, inside the window, worth $500 or less, and not a warranty claim."
+BR-05,Review thresholds,"Lines over $500, warranty claims and exceptions go to the returns coordinator. A request totalling more than $5,000 also needs the sales manager."
+BR-06,Return freight,"Tessmar provides a prepaid label when Tessmar, the carrier or the product is at fault. Otherwise the customer ships at their own cost."
+BR-07,Small errors,"When Tessmar shipped the wrong item and the line is worth under $25, the customer is credited and told to keep or discard the item."
+BR-08,RMA expiry,An approved RMA expires if the goods have not been received within 21 calendar days. The customer is reminded at day 14.
+BR-09,Inspection outcomes,"Each received line is given one outcome: restock at full value, restock as B-stock at a reduced credit, return to supplier, scrap, or reject and ship back to the customer."
+BR-10,Credit,"Credit is issued as a credit memo on the customer's account, never as a card refund, within 2 business days of inspection."
+BR-11,Quantity,The quantity returned on a line cannot exceed the quantity invoiced less anything already returned against that invoice line.

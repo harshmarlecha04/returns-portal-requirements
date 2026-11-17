@@ -1,0 +1,34 @@
+id,area,requirement,priority,goals,stories
+FR-01,Request,"The portal shall show a signed-in customer their invoices from the last 18 months, searchable by invoice number, PO number and part number.",Must,G2,US-01
+FR-02,Request,"The portal shall let the customer select one or more invoice lines, enter a quantity for each and choose a reason from a fixed list.",Must,G2,US-01
+FR-03,Request,The portal shall prevent a return quantity greater than the quantity still returnable on that invoice line (BR-11).,Must,G4,US-01
+FR-04,Request,The portal shall let a draft request be saved and resumed for up to 14 days.,Could,G2,US-01
+FR-05,Eligibility,"The portal shall evaluate each line against the return window, the non-returnable list and the item's flags before submission, and show the result on the line.",Must,G4,US-02
+FR-06,Eligibility,"The portal shall calculate and display the expected credit for each line, including any restocking fee, before the customer submits.",Must,G4,US-02
+FR-07,Eligibility,"The portal shall state who pays return freight for each line, based on the reason (BR-06).",Must,G4,US-02
+FR-08,Eligibility,"The portal shall let the customer request an exception for a line that is not eligible, with a required explanation.",Should,G2,"US-02, US-07"
+FR-09,Evidence,"The portal shall require at least one photo when the reason is damage or defect, and accept up to six images of 10 MB each per line.",Must,G1,US-03
+FR-10,Evidence,The portal shall require a description of the failure and the date installed for warranty claims.,Should,G1,"US-03, US-11"
+FR-11,Approval,The portal shall approve lines that meet BR-04 automatically at submission.,Must,G1,"US-04, US-06"
+FR-12,Approval,"The portal shall place lines that need review in a queue showing age, customer, value and the reason review is needed.",Must,G1,US-06
+FR-13,Approval,"The portal shall let the coordinator approve, deny or ask for more information on each line, with a reason that is shown to the customer.",Must,"G1, G4",US-06
+FR-14,Approval,"The portal shall require a second approval from the sales manager when a request totals more than $5,000 or contains an exception.",Must,G4,US-07
+FR-15,Approval,"The portal shall let an approver waive the restocking fee on a line, recording who waived it and why.",Should,G4,US-07
+FR-16,Shipping,The portal shall issue one RMA number per approved request and produce a printable packing slip carrying the RMA as a barcode.,Must,G3,US-04
+FR-17,Shipping,"The portal shall generate a prepaid carrier label when Tessmar pays freight, and shipping instructions when the customer pays.",Must,G3,US-04
+FR-18,Shipping,The portal shall apply BR-07 and tell the customer not to ship the item.,Should,G1,US-04
+FR-19,Shipping,The portal shall expire an RMA after 21 days without receipt and send a reminder at day 14 (BR-08).,Should,G1,US-05
+FR-20,Status,The portal shall show the customer the current status and history of every return on their account.,Must,"G2, G5",US-05
+FR-21,Status,"The portal shall email the requester when a return is approved, denied, received, credited, or needs information from them.",Must,"G2, G5",US-05
+FR-22,Receiving,The portal shall let a receiver scan the RMA barcode on a handheld device and see the lines and quantities expected.,Must,G3,US-08
+FR-23,Receiving,"The portal shall let the receiver record the quantity received and one inspection outcome per line (BR-09), with notes and photos.",Must,"G1, G4",US-08
+FR-24,Receiving,"The portal shall let a receiver log a package with no RMA by customer and part number, and route it to the coordinator.",Must,G3,US-08
+FR-25,Credit,"The portal shall create a draft credit memo in the ERP when inspection is complete, with amounts calculated from the outcome and the fee.",Must,"G1, G4",US-09
+FR-26,Credit,"The portal shall let the AR specialist review, adjust with a reason, and post the credit memo, and shall record the ERP document number against the return.",Must,G1,US-09
+FR-27,Staff entry,"The portal shall let an inside sales rep create a return on behalf of a customer, recording the rep as the person who entered it.",Must,G2,US-10
+FR-28,Staff entry,"The portal shall show a sales rep the returns for their assigned accounts only, and a sales manager the returns for their team.",Should,G5,US-10
+FR-29,Warranty,"The portal shall group returns with the outcome ""return to supplier"" by supplier, and let purchasing record the supplier's claim number and decision.",Should,G4,US-11
+FR-30,Reporting,"The portal shall report return volume, value, reasons, cycle time and outcomes, filterable by date, customer, part, supplier and sales rep.",Must,"G1, G3, G4",US-12
+FR-31,Reporting,The portal shall export any report view to CSV.,Should,G1,US-12
+FR-32,Admin,"The portal shall let an administrator maintain reasons, fee percentage, thresholds and the return window without a code change.",Should,G4,US-07
+FR-33,Admin,"The portal shall keep a history of every status change, approval, fee waiver and adjustment, with user and time.",Must,G4,"US-06, US-09"

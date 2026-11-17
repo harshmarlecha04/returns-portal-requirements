@@ -1,0 +1,12 @@
+id,question,why_it_matters,who_decides,answer,date_closed
+Q1,Does the restocking fee apply to customers on contract pricing?,"Three large contracts say ""returns at no charge"". The rule engine needs a per-customer override or those accounts need review every time.","Sales manager, Controller",,
+Q2,"When inspection contradicts the customer's reason, who pays the freight already spent?","A customer selects ""shipped wrong part"", gets a prepaid label, and inspection finds they ordered that part. The policy is silent.",VP Operations,,
+Q3,Should top accounts be credited at approval instead of after inspection?,Sales wants advance credit for about 40 accounts. AR is against it. It changes the status model and the credit integration.,"Controller, Sales manager",,
+Q4,How are broken-pack quantities handled?,Fasteners sell in boxes of 100. A customer returning 60 loose pieces cannot be restocked as a box. No rule exists.,Returns coordinator,,
+Q5,How far back can the ERP API return invoice lines?,Warranty periods run to 24 months but the invoice search is specified at 18. IT has not confirmed what the API can serve.,IT,,
+Q6,Can aerosols and other hazardous items be returned at all?,"They are on the non-returnable list, but carriers have their own rules if an exception is granted. A label may not be legal to issue.",Warehouse manager,,
+Q7,Who at a customer is allowed to request a return?,Some customers want any buyer to do it. Others want only a purchasing manager. Customer-side roles are not in scope today.,Sales manager,,
+Q8,What happens to drop-shipped items?,About 6% of lines ship from the supplier directly and never touch a Tessmar warehouse. Should they come back to Tessmar or go to the supplier?,Purchasing,,
+Q9,Is sales tax recalculated on a partial credit?,B-stock outcomes credit a percentage of the line. Finance has not said how tax follows.,Controller,,
+Q10,Do local customers still hand returns to the delivery driver?,Roughly one in eight returns comes back on a Tessmar truck with no label. The driver needs a way to scan or log it.,Warehouse manager,,
+Q11,Does a kit come back whole or by component?,Seal kits and bearing kits are invoiced as one line. Customers often return one unused component.,"Returns coordinator, Purchasing",,
